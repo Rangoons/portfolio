@@ -5,7 +5,7 @@ import IconListing from '../components/icon-listing'
 import { IconNames } from '@blueprintjs/icons'
 import Layout from '../components/layout'
 import ResumeSection from '../components/resume-section'
-import Column from '../components/Column'
+import Column from '../components/column'
 import BulletPoint from '../components/bullet-point'
 import styled from 'styled-components'
 
