@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Button = ({ to, text, color }) => (
-  <Link to={to}>
-    <StyledButton color={color}>{text}</StyledButton>
-  </Link>
+const Button = ({ text, color, style }) => (
+  <StyledButton color={color} style={style}>
+    {text}
+  </StyledButton>
 )
 export default Button
 

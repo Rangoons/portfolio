@@ -2,7 +2,8 @@ import React from 'react'
 import { Colors } from '@blueprintjs/core'
 import Layout from '../components/layout'
 import Image from '../components/image'
-import Button from '../components/button'
+import LocalButton from '../components/local-button'
+import ExternalButton from '../components/external-button'
 
 const IndexPage = () => (
   <Layout>
@@ -33,11 +34,11 @@ const IndexPage = () => (
           </p>
         </div>
         <div style={{ display: 'flex' }}>
-          <Button
+          <ExternalButton
             to="https://github.com/Rangoons?tab=repositories"
             text="GitHub"
           />
-          <Button
+          <LocalButton
             to="/resume"
             text="Resume"
             color={Colors.BLUE3}
