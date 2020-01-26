@@ -37,13 +37,28 @@ const ResumePage = () => (
       <hr />
       <Column>
         <IconHeading icon={IconNames.BRIEFCASE} size={20} text="EXPERIENCE" />
-
+        <ResumeSection
+          company="Horry County Government"
+          location="Conway, SC"
+          title="Full Stack Developer"
+          technologies="React, Redux, React Native, C#"
+          date="August 2019 - Present"
+        >
+          <BulletPoint>
+            Creating custom applications to support the operations of the
+            county.
+          </BulletPoint>
+          <BulletPoint>
+            Maintaining older applications written in C#/.NET and adding new
+            features to the county's React Native application.
+          </BulletPoint>
+        </ResumeSection>
         <ResumeSection
           company="EagleDream Technologies"
-          location="Rochester, NY | (currently remote)"
+          location="Rochester, NY"
           title="Front End Developer"
           technologies="React, Redux, Angular, NGRX, RXJS, MySQL, Node.js, TypeScript, Bootstrap, Blueprint"
-          date="September 2017 - Present"
+          date="September 2017 - August 2019"
         >
           <BulletPoint>
             Creating custom applications for clients using an array of
