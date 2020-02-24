@@ -41,7 +41,7 @@ const ResumePage = () => (
           company="Horry County Government"
           location="Conway, SC"
           title="Full Stack Developer"
-          technologies="React, Redux, React Native, C#"
+          technologies="React, Redux, React Native, C#, GraphQL"
           date="August 2019 - Present"
         >
           <BulletPoint>
@@ -86,7 +86,7 @@ const ResumePage = () => (
             as ticket management and electronic training.
           </BulletPoint>
         </ResumeSection>
-        <ResumeSection
+        {/* <ResumeSection
           company="CareStream Health"
           location="Rochester, NY"
           title="Database Engineer"
@@ -98,7 +98,7 @@ const ResumePage = () => (
             Modeled, automated, and implemented workflow processes using SQL and
             the front-end interface they use.
           </BulletPoint>
-        </ResumeSection>
+        </ResumeSection> */}
         <div>
           <IconHeading
             icon={IconNames.PREDICTIVE_ANALYSIS}
