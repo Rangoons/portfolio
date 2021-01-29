@@ -7,24 +7,29 @@ import ExternalButton from '../components/external-button'
 
 const IndexPage = () => (
   <Layout>
-    <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-      <div>
-        <div style={{ marginBottom: '2rem' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', width: '100%', flexDirection: 'column' }}>
+        <div style={{ marginBottom: '2rem', display:'flex', alignItems: 'center' }}>
+          <span>
+
           <h1>Brendan</h1>
-          <h1>McDonald</h1>
+          <h1 style={{marginBottom: '-24px'}}>McDonald</h1>
+          </span>
+          <div style={{ maxWidth: 250, minWidth: 150 }}>
+          <Image />
+        </div>
         </div>
         <div style={{ maxWidth: '78%' }}>
+
           <p>
             I create applications. Innovation is my passion.{' '}
-            <span role="img" aria-label="man on computer">
+            {/* <span role="img" aria-label="man on computer">
               👨‍💻
-            </span>
+            </span> */}
+
           </p>
           <p>
             I've always been fascinated by the overlap between design and
-            development. My core skills lie in the engineering of modern
-            applications, I truly enjoy when user experience can enhance
-            developer experience.
+            development, finding passion in delivering high-quality client experiences. I have a desire to be challenged by development and enjoy sharing the software I've built and want to make an impact whenever I can.
           </p>
           <p>
             Lets build something great{' '}
@@ -46,10 +51,9 @@ const IndexPage = () => (
           />
         </div>
       </div>
-      <div style={{ maxWidth: 200, minWidth: 120, marginBottom: '1.45rem' }}>
+      {/* <div style={{ maxWidth: 200, minWidth: 120, marginBottom: '1.45rem' }}>
         <Image />
-      </div>
-    </div>
+      </div> */}
   </Layout>
 )
 

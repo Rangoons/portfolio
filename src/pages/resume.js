@@ -38,11 +38,28 @@ const ResumePage = () => (
       <Column>
         <IconHeading icon={IconNames.BRIEFCASE} size={20} text="EXPERIENCE" />
         <ResumeSection
+          company="Jointly"
+          location="Austin, TX"
+          title="Software Engineer"
+          technologies="React, Typescript, Apollo, Next, Jest"
+          date="June 2020 - Present"
+        >
+          <BulletPoint>
+            Development of a collaborative real estate transaction management application in a startup environment.
+          </BulletPoint>
+          <BulletPoint>
+            Established unit testing and helped improve state management and optimize application performance.
+          </BulletPoint>
+          <BulletPoint>
+            Working closely with teams across the organization to execute accurately and swiftly.
+          </BulletPoint>
+        </ResumeSection>
+        <ResumeSection
           company="Horry County Government"
           location="Conway, SC"
           title="Full Stack Developer"
           technologies="React, Redux, React Native, C#, GraphQL"
-          date="August 2019 - Present"
+          date="August 2019 - June 2020"
         >
           <BulletPoint>
             Creating custom applications to support the operations of the
