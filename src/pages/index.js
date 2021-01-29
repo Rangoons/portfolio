@@ -1,5 +1,6 @@
 import React from 'react'
 import { Colors } from '@blueprintjs/core'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import LocalButton from '../components/local-button'
@@ -18,7 +19,7 @@ const IndexPage = () => (
           <Image />
         </div>
         </div>
-        <div style={{ maxWidth: '78%' }}>
+        <Container>
 
           <p>
             I create applications. Motivated by innovation.{' '}
@@ -37,7 +38,7 @@ const IndexPage = () => (
               🛠
             </span>
           </p>
-        </div>
+        </Container>
         <div style={{ display: 'flex' }}>
           <ExternalButton
             to="https://github.com/Rangoons?tab=repositories"
@@ -56,5 +57,15 @@ const IndexPage = () => (
       </div> */}
   </Layout>
 )
+
+const Container = styled.div`
+max-width: 78%;
+@media (min-width: 375px)  { 
+max-width: 100%;
+}
+@media (min-width: 320px) {
+max-width: 100%;
+}
+`
 
 export default IndexPage
