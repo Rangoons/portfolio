@@ -21,7 +21,7 @@ const IndexPage = () => (
         <div style={{ maxWidth: '78%' }}>
 
           <p>
-            I create applications. Innovation is my passion.{' '}
+            I create applications. Motivated by innovation.{' '}
             {/* <span role="img" aria-label="man on computer">
               👨‍💻
             </span> */}
