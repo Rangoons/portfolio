@@ -23,7 +23,7 @@ const ResumeSection = ({
     {children}
     <div style={{ display: 'flex', alignItems: 'baseline' }}>
       {technologies && (
-        <Icon icon={IconNames.BUILD} style={{ margin: '0 10px' }} />
+        <icon style={{ margin: '0 10px' }}>🛠</icon>
       )}
       <span style={{ color: Colors.BLUE3 }}>{technologies}</span>
     </div>

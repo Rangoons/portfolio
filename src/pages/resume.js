@@ -26,22 +26,22 @@ const ResumePage = () => (
           </H1>
         </div>
         <Column>
-          <IconListing icon={IconNames.PHONE} text="(570) 955-6026" />
+          <IconListing icon="📞" text="(570) 955-6026" />
           <IconListing
-            icon={IconNames.ENVELOPE}
+            icon="📬"
             text="hello.brendanm@gmail.com"
           />
-          <IconListing icon={IconNames.CODE} text="brendanmcdonald.me" />
+          <IconListing icon="🌎" text="brendanmcdonald.me" />
         </Column>
       </Header>
       <hr />
       <Column>
-        <IconHeading icon={IconNames.BRIEFCASE} size={20} text="EXPERIENCE" />
+        <IconHeading icon="💼" size={20} text="EXPERIENCE" />
         <ResumeSection
           company="Jointly"
           location="Austin, TX"
           title="Software Engineer"
-          technologies="React, Typescript, Apollo, Next, Jest"
+          technologies="React, TypeScript, Apollo, Next, Jest"
           date="June 2020 - Present"
         >
           <BulletPoint>
@@ -118,7 +118,7 @@ const ResumePage = () => (
         </ResumeSection> */}
         <div>
           <IconHeading
-            icon={IconNames.PREDICTIVE_ANALYSIS}
+            icon="🧑‍🎓"
             size={20}
             text="EDUCATION"
           />
@@ -136,17 +136,12 @@ const ResumePage = () => (
         </div>
         <div>
           <IconHeading
-            icon={IconNames.THUMBS_UP}
+            icon="🏎"
             size={20}
-            text="OTHER TECHNICAL SKILLS"
+            text="RECREATION"
           />
           <p>
-            I use <BlueText>Javascript</BlueText> and <BlueText>Git</BlueText>{' '}
-            daily. I am currently working on a project leveraging{' '}
-            <BlueText>Firebase</BlueText> and I have created other projects
-            using <BlueText>GatsbyJS</BlueText> &{' '}
-            <BlueText>Contentful</BlueText>, <BlueText>Ember.js</BlueText>,{' '}
-            <BlueText>MongoDB</BlueText>, and <BlueText>Circle CI</BlueText>
+            I enjoy <BlueText>Jiu Jitsu</BlueText> 🥋, being a 🐶 <BlueText>dad</BlueText>, ⌨️ <BlueText>keyboards</BlueText>, and <BlueText>local breweries</BlueText> 🍻.
           </p>
         </div>
       </Column>

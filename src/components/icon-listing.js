@@ -3,7 +3,8 @@ import { Icon } from '@blueprintjs/core'
 
 const IconListing = ({ icon, size = 16, text }) => (
   <div style={{ display: 'flex', alignItems: 'baseline' }}>
-    <Icon icon={icon} iconSize={size} />
+    {/* <Icon icon={icon} iconSize={size} /> */}
+    <icon>{icon}</icon>
     <span style={{ marginLeft: 10 }}>{text}</span>
   </div>
 )

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "brendan-mcdonald-portfolio",
+  "description": "Brendan McDonald Portfolio",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Brendan McDonald <hello.brendanm@gmail.com>",
   "dependencies": {
     "@blueprintjs/core": "^3.38.1",
     "@blueprintjs/icons": "^3.24.0",
