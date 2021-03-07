@@ -1,7 +1,8 @@
 import React from 'react'
-import Searching from '../components/images/searching'
 import Card from '../components/card'
 import Layout from '../components/layout'
+import Section from '../components/spotify-section'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const SpotifyPage = () => (
   <Layout>
@@ -19,31 +20,34 @@ const SpotifyPage = () => (
         <h1>Hi there, I'm Brendan McDonald</h1>
         <Card>
           <div style={{ maxWidth: 450, minWidth: 250 }}>
-            <Searching styles={{ borderRadius: 3 }} />
+            <StaticImage
+              src="../images/searching.png"
+              styles={{ borderRadius: 3 }}
+            />
           </div>
           <span>My friend, Joe, and I looking for jobs at Spotify.</span>
         </Card>
       </div>
-      <div
-        style={{ marginBottom: '2rem', display: 'flex', alignItems: 'center' }}
+
+      <Section
+        text="I want to build new and fun stuff with talented people. People that like to educate and know theres more to learn."
+        caption="This looks like a supportive team I could get behind"
+        left={false}
       >
-        <h1>Sub domain spotify test</h1>
-        <Card>
-          <div style={{ maxWidth: 450, minWidth: 250 }}>
-            <Searching styles={{ borderRadius: 3 }} />
-          </div>
-          <span>My friend, Joe, and I looking for jobs at Spotify.</span>
-        </Card>
-      </div>
-      <Card>
-        <div class="flex-shrink-0">
-          <Searching styles={{ borderRadius: 3 }} />
-        </div>
-        <div>
-          <div class="text-xl font-medium text-black">ChitChat</div>
-          <p class="text-gray-500">You have a new message!</p>
-        </div>
-      </Card>
+        <StaticImage src="../images/team.jpg" styles={{ borderRadius: 3 }} />
+      </Section>
+
+      <Section
+        text={[
+          'So I want to help build the Podcaster Mission, writing ',
+          <del>Javascript</del>,
+          ' React every day.',
+        ]}
+        caption="Joe when he sees the new tools I've helped produce"
+        left
+      >
+        <StaticImage src="../images/joe.jpeg" styles={{ borderRadius: 3 }} />
+      </Section>
     </div>
   </Layout>
 )
