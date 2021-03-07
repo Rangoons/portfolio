@@ -1,10 +1,8 @@
 import React from 'react'
-import Searching from '../components/images/searching'
-import Rogan from '../components/images/rogan'
-import SpotifyTeam from '../components/images/spotifyteam'
 import Card from '../components/card'
 import Layout from '../components/layout'
 import Section from '../components/spotify-section'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const SpotifyPage = () => (
   <Layout>
@@ -22,7 +20,10 @@ const SpotifyPage = () => (
         <h1>Hi there, I'm Brendan McDonald</h1>
         <Card>
           <div style={{ maxWidth: 450, minWidth: 250 }}>
-            <Searching styles={{ borderRadius: 3 }} />
+            <StaticImage
+              src="../images/searching.png"
+              styles={{ borderRadius: 3 }}
+            />
           </div>
           <span>My friend, Joe, and I looking for jobs at Spotify.</span>
         </Card>
@@ -33,7 +34,7 @@ const SpotifyPage = () => (
         caption="This looks like a supportive team I could get behind"
         left={false}
       >
-        <SpotifyTeam styles={{ borderRadius: 3 }} />
+        <StaticImage src="../images/team.jpg" styles={{ borderRadius: 3 }} />
       </Section>
 
       <Section
@@ -45,7 +46,7 @@ const SpotifyPage = () => (
         caption="Joe when he sees the new tools I've helped produce"
         left
       >
-        <Rogan styles={{ borderRadius: 3 }} />
+        <StaticImage src="../images/joe.jpeg" styles={{ borderRadius: 3 }} />
       </Section>
     </div>
   </Layout>
