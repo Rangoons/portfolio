@@ -11,7 +11,7 @@ const IndexPage = () => (
     <div style={{ display: 'flex', justifyContent: 'center', width: '100%', flexDirection: 'column' }}>
         <div style={{ marginBottom: '2rem', display:'flex', alignItems: 'center' }}>
 
-          <h1>Spotify</h1>
+          <h1>Sub domain spotify test</h1>
 
 
 
