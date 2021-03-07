@@ -1,6 +1,6 @@
 import React from 'react'
-import Spotify from './spotify'
+import Me from './me'
 
-const IndexPage = () => <Spotify />
+const IndexPage = () => <Me />
 
 export default IndexPage
