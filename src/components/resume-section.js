@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Colors, Icon, Code } from '@blueprintjs/core'
-import { IconNames } from '@blueprintjs/icons'
 
 const ResumeSection = ({
   company,
@@ -14,28 +12,22 @@ const ResumeSection = ({
   <Wrapper>
     <Row>
       <div>
-        {company}, <Muted>{location}</Muted>
+        {company}, <span className="text-gray-500">{location}</span>
       </div>
-      <Muted>{date}</Muted>
+      <span className="text-gray-500">{date}</span>
     </Row>
-    <Code>{title}</Code>
+    <code>{title}</code>
 
     {children}
     <div style={{ display: 'flex', alignItems: 'baseline' }}>
-      {technologies && (
-        <icon style={{ margin: '0 10px' }}>🛠</icon>
-      )}
-      <span style={{ color: Colors.BLUE3 }}>{technologies}</span>
+      {technologies && <icon style={{ margin: '0 10px' }}>🛠</icon>}
+      <span className="text-blue-500">{technologies}</span>
     </div>
   </Wrapper>
 )
 
 const Wrapper = styled.div`
   margin-bottom: 1.5rem;
-`
-
-const Muted = styled.span`
-  color: ${Colors.GRAY2};
 `
 
 const Row = styled.div`

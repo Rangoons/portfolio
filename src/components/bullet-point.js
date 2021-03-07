@@ -1,6 +1,4 @@
 import React from 'react'
-import { Icon } from '@blueprintjs/core'
-import { IconNames } from '@blueprintjs/icons'
 
 const BulletPoint = ({ children }) => (
   <div
@@ -10,7 +8,7 @@ const BulletPoint = ({ children }) => (
       marginLeft: 10,
     }}
   >
-    <Icon icon={IconNames.CHEVRON_RIGHT} />
+    <icon>🔹</icon>
     <span>{children}</span>
   </div>
 )

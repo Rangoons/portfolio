@@ -1,10 +1,9 @@
 import React from 'react'
-import { Icon, H3 } from '@blueprintjs/core'
 
-const IconHeading = ({ icon, size = 16, text }) => (
+const IconHeading = ({ icon, text }) => (
   <div style={{ display: 'flex', alignItems: 'baseline' }}>
     <icon>{icon}</icon>
-    <H3 style={{ marginLeft: 10, marginBottom: 10 }}>{text}</H3>
+    <h3 style={{ marginLeft: 10, marginBottom: 10 }}>{text}</h3>
   </div>
 )
 

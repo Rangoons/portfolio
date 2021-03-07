@@ -1,8 +1,6 @@
 import React from 'react'
-import { H1, Colors } from '@blueprintjs/core'
 import IconHeading from '../components/icon-heading'
 import IconListing from '../components/icon-listing'
-import { IconNames } from '@blueprintjs/icons'
 import Layout from '../components/layout'
 import ResumeSection from '../components/resume-section'
 import Column from '../components/column'
@@ -18,19 +16,14 @@ const ResumePage = () => (
             display: 'flex',
           }}
         >
-          <H1>Brendan </H1>
-          <H1>
-            <span style={{ color: Colors.BLUE4, marginLeft: 10 }}>
-              McDonald
-            </span>
-          </H1>
+          <h1>Brendan </h1>
+          <h1>
+            <span className="text-blue-500 ml-3">McDonald</span>
+          </h1>
         </div>
         <Column>
           <IconListing icon="📞" text="(570) 955-6026" />
-          <IconListing
-            icon="📬"
-            text="hello.brendanm@gmail.com"
-          />
+          <IconListing icon="📬" text="hello.brendanm@gmail.com" />
           <IconListing icon="🌎" text="brendanmcdonald.me" />
         </Column>
       </Header>
@@ -45,13 +38,16 @@ const ResumePage = () => (
           date="June 2020 - Present"
         >
           <BulletPoint>
-            Development of a collaborative real estate transaction management application in a startup environment.
+            Development of a collaborative real estate transaction management
+            application in a startup environment.
           </BulletPoint>
           <BulletPoint>
-            Established unit testing and helped improve state management and optimize application performance.
+            Established unit testing and helped improve state management and
+            optimize application performance.
           </BulletPoint>
           <BulletPoint>
-            Working closely with teams across the organization to execute accurately and swiftly.
+            Working closely with teams across the organization to execute
+            accurately and swiftly.
           </BulletPoint>
         </ResumeSection>
         <ResumeSection
@@ -74,7 +70,7 @@ const ResumePage = () => (
           company="EagleDream Technologies"
           location="Rochester, NY"
           title="Front End Developer"
-          technologies="React, Redux, Angular, NGRX, RXJS, MySQL, Node.js, TypeScript, Bootstrap, Blueprint"
+          technologies="React, Redux, Angular, NGRX, RXJS, MySQL, Node.js, TypeScript"
           date="September 2017 - August 2019"
         >
           <BulletPoint>
@@ -117,11 +113,7 @@ const ResumePage = () => (
           </BulletPoint>
         </ResumeSection> */}
         <div>
-          <IconHeading
-            icon="🧑‍🎓"
-            size={20}
-            text="EDUCATION"
-          />
+          <IconHeading icon="🧑‍🎓" size={20} text="EDUCATION" />
           <ResumeSection
             company="Rochester Institute of Technology"
             location="Rochester, NY"
@@ -135,13 +127,11 @@ const ResumePage = () => (
           </ResumeSection>
         </div>
         <div>
-          <IconHeading
-            icon="🏎"
-            size={20}
-            text="RECREATION"
-          />
+          <IconHeading icon="🏎" size={20} text="RECREATION" />
           <p>
-            I enjoy <BlueText>Jiu Jitsu</BlueText> 🥋, being a 🐶 <BlueText>dad</BlueText>, ⌨️ <BlueText>keyboards</BlueText>, and <BlueText>local breweries</BlueText> 🍻.
+            I enjoy <BlueText>Jiu Jitsu</BlueText> 🥋, being a 🐶{' '}
+            <BlueText>dad</BlueText>, ⌨️ <BlueText>keyboards</BlueText>, and{' '}
+            <BlueText>local breweries</BlueText> 🍻.
           </p>
         </div>
       </Column>
@@ -150,7 +140,7 @@ const ResumePage = () => (
 )
 
 const BlueText = styled.span`
-  color: ${Colors.BLUE3};
+  color: #2563eb;
   flex-wrap: wrap;
 
   @media (max-width: 768px) {
