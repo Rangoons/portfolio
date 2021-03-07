@@ -10,51 +10,13 @@ const IndexPage = () => (
   <Layout>
     <div style={{ display: 'flex', justifyContent: 'center', width: '100%', flexDirection: 'column' }}>
         <div style={{ marginBottom: '2rem', display:'flex', alignItems: 'center' }}>
-          <span>
 
-          <h1>Brendan</h1>
-          <h1 style={{marginBottom: '-24px'}}>McDonald</h1>
-          </span>
-          <div style={{ maxWidth: 250, minWidth: 150 }}>
-          <Image />
-        </div>
-        </div>
-        <Container>
+          <h1>Spotify</h1>
 
-          <p>
-            I create applications. Motivated by innovation.{' '}
-            {/* <span role="img" aria-label="man on computer">
-              👨‍💻
-            </span> */}
 
-          </p>
-          <p>
-            I've always been fascinated by the overlap between design and
-            development, finding passion in delivering high-quality client experiences. I have a desire to be challenged by development and enjoy sharing the software I've built and want to make an impact whenever I can.
-          </p>
-          <p>
-            Lets build something great{' '}
-            <span role="img" aria-label="hammer and wrench">
-              🛠
-            </span>
-          </p>
-        </Container>
-        <div style={{ display: 'flex' }}>
-          <ExternalButton
-            to="https://github.com/Rangoons?tab=repositories"
-            text="GitHub"
-          />
-          <LocalButton
-            to="/resume"
-            text="Resume"
-            color={Colors.BLUE3}
-            style={{ marginLeft: 20 }}
-          />
+
         </div>
       </div>
-      {/* <div style={{ maxWidth: 200, minWidth: 120, marginBottom: '1.45rem' }}>
-        <Image />
-      </div> */}
   </Layout>
 )
 
