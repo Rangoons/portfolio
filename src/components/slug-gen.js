@@ -65,11 +65,7 @@ const SlugGen = () => {
 
   return (
     <Column>
-      <div
-        style={{
-          display: 'flex',
-        }}
-      >
+      <Wrapper>
         <SelectWrapper>
           <span>Adjective Categories</span>
           <StyledSelect
@@ -90,7 +86,7 @@ const SlugGen = () => {
             onChange={(val) => setNounValue(val)}
           />
         </SelectWrapper>
-      </div>
+      </Wrapper>
       <Name>{genSlug}</Name>
       <Button text={'GENERATE'} onClick={generateName} />
     </Column>
@@ -98,7 +94,10 @@ const SlugGen = () => {
 }
 
 const StyledSelect = styled(Select)`
-  width: 400px;
+  width: 300px;
+  @media (min-width: 1000px) {
+    width: 400px;
+  }
 `
 
 const Column = styled.div`
@@ -107,7 +106,13 @@ const Column = styled.div`
   align-items: center;
   flex-direction: column;
 `
-
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+`
 const SelectWrapper = styled.div`
   display: flex;
   flex-direction: column;
