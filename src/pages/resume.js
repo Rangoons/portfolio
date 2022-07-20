@@ -31,11 +31,28 @@ const ResumePage = () => (
       <Column>
         <IconHeading icon="💼" size={20} text="EXPERIENCE" />
         <ResumeSection
+          company="Mmhmm"
+          location="Remote"
+          title="Senior Software Engineer"
+          technologies="React, TypeScript, Next"
+          date="September 2021 - Present"
+        >
+          <BulletPoint>
+            Development of a video content consumption platform.
+          </BulletPoint>
+          <BulletPoint>
+            Rapidly prototyping ideas, improving upon concepts, and driving releases.
+          </BulletPoint>
+          <BulletPoint>
+          Help to set the technical direction for web applications.
+          </BulletPoint>
+        </ResumeSection>
+        <ResumeSection
           company="Jointly"
           location="Austin, TX"
           title="Software Engineer"
           technologies="React, TypeScript, Apollo, Next, Jest"
-          date="June 2020 - Present"
+          date="June 2020 - September 2021"
         >
           <BulletPoint>
             Development of a collaborative real estate transaction management
@@ -82,7 +99,7 @@ const ResumePage = () => (
             debugging and small tasks to the back end teams.
           </BulletPoint>
         </ResumeSection>
-        <ResumeSection
+        {/* <ResumeSection
           company="ITS-Resnet @ RIT"
           location="Rochester, NY"
           title="Senior Technician & Full Stack Developer"
@@ -98,7 +115,7 @@ const ResumePage = () => (
             internal web apps to support our technical support workflows, such
             as ticket management and electronic training.
           </BulletPoint>
-        </ResumeSection>
+        </ResumeSection> */}
         {/* <ResumeSection
           company="CareStream Health"
           location="Rochester, NY"
